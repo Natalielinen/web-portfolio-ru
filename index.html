@@ -3,106 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="frontend, html, css, seo, web-development">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Портфолио</title>
 </head>
 <body>
-    <header class="header">
-            <div class="logo"><p>Портфолио</p></div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#about-me">Обо Мне</a></li>
-                <li><a href="#examples">Мои Работы</a></li>
-                <li><a href="#skills">Навыки</a></li>
-                <li><a href="#main-footer">Контакты</a></li>
+<header class="main-header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <img src="img/briefcase.svg" alt="Logo" width="38" height="33">
+                <p>Портфолио</p>
+            </div>
+            <ul class="main-menu">
+                <li><a class="current">Главная</a></li>
+                <li><a href="#about-me">Обо мне</a></li>
+                <li><a href="pages/projects.html">Проекты</a></li>
+                <li><a href="#footer">Контакты</a></li>
+                <li><a href="https://web-portfolio-ru.netlify.app/"> <img src="img/language.svg" alt="language" width="30" height="30"></a></li>
             </ul>
-            </nav>
-        <div class="email"><a href="mailto:nataliech0409@gmail.com">nataliech0409@gmail.com</a></div>
-    </header>
-    <main class="main">
-        <h1>Фронтенд разработчик</h1>
-        <section  id="about-me">
-            
-            <div class="about-title">
-                <h2>Обо мне</h2>
+
+        </div>
+        <h1>HTML Верстальщик</h1>
+        <div class="button">
+            <a href="pages/projects.html" class="btn">Все проекты</a>
+        </div>
+
+    </div>
+</header>
+<main>
+    <h3>Обо мне</h3>
+    <div class="about-me" id="about-me">
         <p>
-            Приветствую Вас специалист по подбору персонала! Позвольте представиться, меня зовут Наталия
-            я начинающий фронтенд разработчик. Прошу взгянуть на перечень моих работ 
-            представленых ниже. Не смотря на то, что все это учебные проекты, я считаю, что они 
-            достойны внимания. 
+            Здравствуйте и добро пожаловать! Меня зовут Наталия я занимаюсь версткой
+            интерфейсов для веб сайтов. Имею образование в области компьютерных сетей
+            и веб-разработки, а также небольшой опыт в этой области.  В моем портфолио Вы
+            можете ознакомиться с моими проектами. Также Вы можете скачать моё
+            резюме в формате <a href="" download>docx</a> или
+            <a href="" download>pdf</a>, по всем вопросам можете писать на 
+            мою  <a href="mailto:nataliech0409@gmail.com">почту</a>.
         </p>
-
-       </div>
-        </section>
-        <section id="examples">
-            <h2>Мои Работы</h2>
-            <div class="work">
-                <div class="work1">
-                    <a href="source/keksby/index.html" target="_blank"><img src="img/keksby1.jpg" alt="Проект Кексби"></a>
-                </div>
-
-                <div class="work2">
-                    <a href="https://coffee-shop-7a630c.webflow.io/" target="_blank"><img src="img/cofeeeshop1.jpg" alt="Кофейня"></a>
-                </div>
-
-                <div class="work3">
-                    <a href="source/aplus/index.html" target="_blank"><img src="img/aplus1.jpg" alt="Школа А+"></a>
-                </div>
-
-                <div class="work4">
-                    <a href="source/tribute page/index.html" target="_blank"><img src="img/tribute1.jpg" alt="Tribute page"></a>
-                </div>
-
-                <div class="work5">
-                    <a href="source/todolist/index.html" target="_blank"><img src="img/todolist.jpg" alt="Список дел"></a>
-                </div>
-
-                <div class="work6">
-                    <a href="source/survey form/index.html" target="_blank"><img src="img/Survey-form.jpg" alt="Форма опроса"></a>
-                </div>
-            
+    </div>
+    <h3>Проекты</h3>
+    <div class="projects">
+        <div class="item shape coffeeshop">
+            <div class="details">
+                <p class="item-title">Кофейня</p>
+                <p class="item-description">Сайт кофейни. Учебны проект на webflow</p>
+                <a class="item-btn" href="pages/projects.html">Подробнее &rArr;</a>
             </div>
-        </section>
-        <section id="skills">
-            
-            <div class="skills-cont">
-                <h2 class="skills-title">Навыки</h2>
-                <div class="cont-skills-flex">
-            <div class="skills-list-first">
-            <ul class="skills-list">
-                <li>HTML/HTML5</li>
-                <li>CSS/CSS3</li>
-                <li>Less/SASS/SCSS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>React/Redux</li>
-            </ul>
+
+        </div>
+
+        <div class="item shape a-plus">
+            <div class="details">
+                <p class="item-title">Школа А Плюс</p>
+                <p class="item-description">Сайт онлайн школы. Учебный проект,
+                    сверстанный на HTML и CSS
+                </p>
+                <a class="item-btn" href="pages/projects.html">Подробнее &rArr;</a>
             </div>
-            <div class="skills-list-second">
-                <ul class="skills-list">
-                    <li>Git</li>
-                    <li>Wordpress</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Gimp</li>
-                    <li>Figma</li>
-                    <li>Webflow</li>
-                </ul>
-                </div>
-                </div>
-                </div>
-        </section>
-    </main>
-   <footer id="main-footer">
-    <p>Контакты</p>
-    <p><a href="mailto:nataliech0409@gmail.com">e-mail: nataliech0409@gmail.com</a></p>
-    <p class="social">
-        <a href="https://www.facebook.com/natalie.ch.988" target="_blank"><img src="img/fb.png" alt="Facebook" width="32"></a>
-        <a href="https://www.linkedin.com/in/nataliia-chufistova/" target="_blank"><img src="img/in.png" alt="Linkedin" width="32"></a>
-        <a href="https://vk.com/id174965435" target="_blank">
-            <img src="img/vk.png" alt="Vkontakte" width="32">
-        </a>
-    </p>
-   </footer>
+
+        </div>
+
+        <div class="item shape beauty">
+            <div class="details">
+                <p class="item-title">Beauty</p>
+                <p class="item-description">Сайт салона красоты.
+                    Проект для практики верстки HTML и CSS</p>
+                <a class="item-btn" href="pages/projects.html">Подробнее &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape bfg">
+            <div class="details">
+                <p class="item-title">BFG Unpacker</p>
+                <p class="item-description">Сайт программы BFG Unpacker.
+                    Реальный проект, все еще в разработке</p>
+                <a class="item-btn" href="pages/projects.html">Подробнее &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape kvast">
+            <div class="details">
+                <p class="item-title">Кваст</p>
+                <p class="item-description">Сайт крафтового кваса.
+                    Экзаменационный проект, все ещё в разработке</p>
+                <a class="item-btn" href="pages/projects.html">Подробнее &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape survey">
+            <div class="details">
+                <p class="item-title">Форма опроса</p>
+                <p class="item-description">Простая форма опроса. Учебный проект,
+                    практика верстки на HTML и CSS
+                </p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
+
+        </div>
+
+    </div>
+    <h3>Навыки и Технологии</h3>
+    <div class="skills">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Wordpress</li>
+        </ul>
+        <ul>
+            <li>Критическое мышление</li>
+            <li>Желание и готовность учиться</li>
+            <li>Креативность</li>
+            <li>Открытость</li>
+            <li>Решение проблем</li>
+        </ul>
+        <ul>
+            <li>GIT</li>
+            <li>Adobe Photoshop</li>
+            <li>Gimp</li>
+            <li>Figma</li>
+            <li>Webflow</li>
+        </ul>
+
+
+    </div>
+</main>
+<footer id="footer">
+    <p>email: <a href="mailto:nataliech0409@gmail.com" class="mail">nataliech0409@gmail.com</a></p>
+    <div class="social">
+        <a class="fb" href="https://www.facebook.com/natalie.ch.988" target="_blank">Facebook</a>
+        <a class="ln" href="https://www.linkedin.cn/in/nataliia-chufistova/" target="_blank">Linkedin</a>
+        <a class="git" href="https://github.com/Natalielinen" target="_blank">Github</a>
+        <a class="vk" href="https://vk.com/id174965435" target="_blank">Vkontacte</a>
+    </div>
+</footer>
+<button class="up-btn">
+    <img src="img/up-arrow (1).svg" alt="Arrow" width="25" height="25">
+</button>
+<script src="scripts/upbtn.js"></script>
 </body>
 </html>
