@@ -79,6 +79,14 @@ body {
     border-bottom: 1px solid #fb0303;
 }
 
+.menu-hamburger {
+    width: 64px;
+    height: 64px;
+    background: url('../img/menu.png') 0 15px no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
 .current {
     border-bottom: 1px solid #fb0303;
 
@@ -152,18 +160,16 @@ h3 {
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    gap: 5% 0;
-    justify-items: center;
-    padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2% 1%;
     background-color: #000000;
 }
 
 .item {
     text-align: center;
-
-
+    margin: 2% 2%;
 }
 
 .shape {
