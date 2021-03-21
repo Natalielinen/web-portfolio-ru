@@ -2,12 +2,11 @@
     .main-menu {
         display: none;
     }
-    .menu-hamburger {
-        display: block;
-    }
+    
 
     .logo {
-        margin-left: 30px;
+        
+        margin: 0 auto;
     }
 
     .about-me p {
@@ -24,27 +23,51 @@
     h1 {
         font-size: 3.5em;
         text-shadow: 0 0 5px black;
+    }   
+
+}
+
+@media(max-width: 781px){
+    .full-project {
+        flex-wrap: wrap;
+        margin: 25px;
     }
 
-    
-
+    .full-project:nth-child(even){
+        flex-direction: row; 
+    }
 }
 
 
 @media(max-width:376px){
     .skills {
         display: block;
+        width: 80%;
     }
 
     .skills ul {
         margin: 0 auto;
     }
 
+    h1 {
+        font-size: 3em;
+    }
+
+    .mail {
+        font-size: 1em;
+    }
+
+    .header-top {
+        padding: 0;
+    }
+
 }
 
-@media(max-width:321px){
-h1 {
-    font-size: 3em;
-}
+@media(max-width: 321px){
+    .full-project {
+        margin: 5px;
+    }
 
 }
+
+

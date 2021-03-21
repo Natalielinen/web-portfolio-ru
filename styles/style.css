@@ -79,17 +79,9 @@ body {
     border-bottom: 1px solid #fb0303;
 }
 
-.menu-hamburger {
-    width: 64px;
-    height: 64px;
-    background: url('../img/menu.png') 0 15px no-repeat;
-    cursor: pointer;
-    display: none;
-}
 
 .current {
     border-bottom: 1px solid #fb0303;
-
 }
 
 .main-menu .current:hover {
@@ -259,11 +251,10 @@ h3 {
     width: 50%;
     border: 2px solid #fb0303;
     border-radius: 15px;
-
+    box-sizing: border-box;
 }
 
 .skills ul {
-
     list-style: square;
 }
 
@@ -397,6 +388,8 @@ footer .social a:last-child {
 .resume a {
     display: block;
 }
+
+
 
 
 
