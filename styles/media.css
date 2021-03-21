@@ -1,0 +1,49 @@
+@media(max-width: 1281px){
+    .main-menu {
+        display: none;
+    }
+    .menu-hamburger {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .about-me p {
+        width: 60%;
+
+    }
+}
+@media(max-width:911px){
+    .skills {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        text-shadow: 0 0 5px black;
+    }
+
+    
+
+}
+
+
+@media(max-width:376px){
+    .skills {
+        display: block;
+    }
+
+    .skills ul {
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width:321px){
+h1 {
+    font-size: 3em;
+}
+
+}
