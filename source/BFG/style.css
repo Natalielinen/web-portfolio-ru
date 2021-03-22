@@ -13,8 +13,8 @@ body {
 
 .languages {
     position: fixed;
-    top: 50px;
-    left: 1200px;
+    top: 5%;
+    left: 90%;
     width: 110px;
     display: flex;
     justify-content: space-between;
