@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'KoHo', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+    background-color: black;
+    color: orangered;
+    border-top: 2px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+    font-style: italic;
+}
+
+.page-tools-bar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: orangered;
+    border-top: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content__tools-panel {
+    width: 18%;
+    min-height: 550px;
+    padding: 10px 10px;
+    background-color: black;
+    border-top: 1px solid #3c3c3c;
+    border-bottom: 2px solid #3c3c3c;
+}
+
+.accordeon__item__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-bottom: 2px solid rgb(20, 20, 20);
+    background-color: orangered;
+    cursor: pointer;
+}
+
+
+.accordeon__item__content {
+    padding: 10px 5px;
+    background-color: rgb(20, 20, 20);
+    color: orangered;
+}
+
+.accordeon__item__content p {
+    padding: 5px 15px;
+}
+
+.accordeon__item__content p span {
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    background-color: orangered;
+}
+
+.main-content__canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 62%;
+    height: auto;
+    background-color: rgb(211, 211, 211);
+}
+
+.main-content__canvas__square {
+    width: 400px;
+    height: 400px;
+    background-color: orangered;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.main-content__canvas__text {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.main-content__canvas__toolbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: black;
+    color: orangered;
+    border-top: 1px solid #3c3c3c;
+    border-bottom: 2px solid #3c3c3c;
+    border-left: 2px solid #3c3c3c;
+    border-right: 2px solid #3c3c3c;
+}
+
+.main-content__canvas__toolbar input[type="number"] {
+    width: 50px;
+}
+
+.main-content__answer {
+    width: 20%;
+    height: auto;
+    background-color: black;
+    color: orangered;
+    padding-left: 20px;
+    border-top: 1px solid #3c3c3c;
+    border-bottom: 2px solid #3c3c3c;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    width: 100%;
+    height: auto;
+    padding: 30px 35px 30px 25px;
+    background-color: black;
+    color: orangered;
+}
+
+.main-footer a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.main-footer__email {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.main-footer__social {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.main-footer__social div {
+    width: 40px;
+    height: 40px;
+}
+
+.main-footer__social__git {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: url('../assets/github.png') center center no-repeat;
+}
+
+.main-footer__social__vk {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: url('../assets/vk.png') center center no-repeat;
+}
+
+.main-footer__social__ln {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: url('../assets/linkedin.png') center center no-repeat;
+}
+
+.main-footer__copywright {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+select, 
+input[type="number"] {
+    outline: none;
+}
+
+input[type="range"] {
+    width: 120px;
+}
+
+.manual-radius-inputs,
+.shadow-manual-inputs,
+.border-manual-input,
+.outline-manual-input,
+.text-shadow-manual-input,
+.text-border-manual-input {
+    width: 50px;
+    display: inline-block;
+}
+
+.disabled {
+    display: none;
+}
+
+.square-border-radius+span,
+.box-shadow-input+span,
+.block-border-range+span,
+#block-outline-width+span,
+.text-shadow-input+span,
+.text-border+span {
+    cursor: pointer;
+}
+
+.text-borders-customization {
+    display: flex;
+}
+
+.text-borders-block {
+    margin-top: 10px;
+}
+
+.text-borders-block p {
+    margin: 0;
+
+}
+
